@@ -14,10 +14,7 @@ class ModalButton extends Component {
   render() {
     return (
       <>
-        <div
-          
-          style={{ height: "5vh" }}
-        >
+        <div style={{ height: "5vh" }}>
           <Button variant="primary" onClick={this.openModal}>
               Add
           </Button>

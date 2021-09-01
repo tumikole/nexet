@@ -1,5 +1,14 @@
 .navbar-dark{
+    display: flex;
+  list-style-type: none;
+float:left;
     background-color: rgb(13, 245, 214);
     position:sticky;
     height: 50px; 
+}
+
+.navItems{
+ display: ;
+  float:right;
+  spac
 }

@@ -14,22 +14,32 @@ class Form extends React.Component {
           position: '',
           task: '',
          salary: '',
-          complete: false,
-          food: '',
-          date:''
+         food:{
+           chooseFood: 'Pizza, Burger'
+          },
+          date:'',
+          complete: 'false'
         }
       
         
         };
     
-        
+        // this.toggleVisibility = this.toggleVisibility.bind(this);
     
       }
     
       handleChange(event) {
         this.setState({...this.state,[event.target.name]: event.target.value});
       }
-    
+
+  //     toggleVisibility() {
+  //       this.setState(function(state) {
+  //         if(state.task === 'Other') {
+  //           return <input type="text" placeholder="Other"/>
+  //         }
+  //   })
+  // }
+
       onSubmit(event){
         const {list,person} = this.state
         list.push(person)
@@ -71,8 +81,7 @@ class Form extends React.Component {
       
       
     render() {
-        // const {handleChange}= this.state;
-        
+        console.log('task',this.state.employees.task)
         return (
           <form className="myForm">
 <div>
@@ -86,6 +95,7 @@ Surname<input type="text" name="" placeholder="Employee Surname"/>
 <hr/>
 <div>
             Position<select>
+            <option>Select Position</option>
             <option>Manager</option>
             <option>Ceo</option>
             <option>Senior Dev</option>
@@ -94,14 +104,11 @@ Surname<input type="text" name="" placeholder="Employee Surname"/>
 </div>
 <hr/>
 <div>
-Task<select>
-  <option>HTML</option>
-  <option>CSS</option>
-  <option>JavaScript</option>
-  <option>ReactJS</option>
-</select>
-<p><small>other</small></p>
-<input type="text" name="" placeholder="Other Task"/>
+Task
+<input type="text" name="" value="" placeholder="Task"/>
+ 
+
+
 </div>
 <hr/>
 <div>
