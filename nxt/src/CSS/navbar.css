@@ -1,0 +1,15 @@
+.navbar-dark{
+  background-color: rgb(13, 245, 214);
+  position:sticky;
+  /* height: 50px;  */
+}
+
+ul{
+
+}
+ul,
+li{
+  display: flex;
+margin-top: 15px;
+padding-right: 5px;
+}

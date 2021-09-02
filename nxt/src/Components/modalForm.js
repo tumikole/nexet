@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Modal, Button } from "react-bootstrap";
-import Form from "../formComponent/form";
-import './modalForm.css'
+import Form from "../Components/form";
+import '../CSS/modalForm.css'
 
 class ModalButton extends Component {
   state = {

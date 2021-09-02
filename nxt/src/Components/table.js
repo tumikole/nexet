@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import '../Table/table'
+import {Link} from "react-router-dom";
+import Form from "../Components/form"
+
 
 class table extends Component {
-    render() {
+  render() {
+      <Form  myForm={this.props.Form} />
         return (
             <div>
                 <br/>
                 <hr/>
+<Link to="/">
+<caption>Home</caption>
+</Link>
        <div>
            <h1 style={{ textAlign:'center',}}>Employee List</h1>
        </div>
@@ -34,7 +40,6 @@ class table extends Component {
   </tbody>
 </table>
 </div>
-
             </div>
         );
     }
